@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+  <title>블랙야크</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="header-footer.css">
+  <style type="text/css"></style>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript"></script>
+  <!-- 슬릭 -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+
+
+  <div w3-include-header="header.html"></div>
+
+
+  <main>
+
+    <div class="slickmain">
+      <div class="mySlides">
+        <div>
+          <img src="./img/index-main-slide-1.jpg">
+        </div>
+        <div class="slide-txt">
+          <div>아늑하게 <br>
+            되돌리다</div>
+          <div>혹독한 기후 속, 체온을 지켜내는<br>
+            히마알라야, 알라야GTX다운자켓</div>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div>
+          <img src="./img/index-main-slide-2.jpg">
+        </div>
+        <div class="slide-txt">
+          <div>블랙야크와 떠나는<br>
+            안전한 겨울 산행!</div>
+          <div>
+            안전한 겨울 산행!<br>
+            추천 아이템</div>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div>
+          <img src="./img/index-main-slide-3.jpg">
+        </div>
+        <div class="slide-txt">
+          <div>블랙야크<br>
+            산. 타. 제</div>
+          <div>블랙야크와 함께 겨울 산타자!<br>
+            신규회원가입 2만P 혜택까지</div>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div>
+          <img src="./img/index-main-slide-4.jpg">
+        </div>
+        <div class="slide-txt">
+          <div>가볍고 따뜻한 코트니 다운<br>
+            BIG SALE</div>
+          <div>~ 최대 71% + 추가 20%쿠폰<br>
+            2023.10.20(FRI) ~</div>
+        </div>
+      </div>
+
+      <div class="mySlides">
+        <div>
+          <img src="./img/index-main-slide-5.jpg">
+        </div>
+        <div class="slide-txt">
+          <div>블랙야크<br>
+            히마/알라야 GTX 사은 프로모션</div>
+          <div>구매시 특별 사은품 지급<br>
+            2023.12.06(WED)~ 종료시</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-pagination x-centers">
+      <span class="current-slide">1</span> / <span class="total-slides">5</span>
+    </div>
+
+    <div class="slide-prev-btn"></div>
+    <div class="slide-next-btn"></div>
+
+  </main>
+
+
+  <script>
+    // index - 메인 슬라이드
+    $(document).ready(function () {
+      $('.slickmain').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow: '.slide-prev-btn',
+        nextArrow: '.slide-next-btn',
+      });
+    });
+
+    $('.slickmain').on('afterChange', function (event, slick, currentSlide) {
+      var totalSlides = slick.slideCount;
+      var currentSlideNumber = currentSlide + 1;
+      $('.current-slide').text(currentSlideNumber);
+      $('.total-slides').text(totalSlides);
+    });
+  </script>
+
+
+  <article class="keywords f-sb-d">
+
+    <div>
+      <h2>Keyword Ranking</h2>
+
+      <ul>
+        <li>
+          <div><span>1</span>아이유 다운</div>
+
+          <div class="f-default accordion-box">
+            <figure>
+              <img src="./img/index-keywords-rank1-pic-1.jpg">
+              <figcaption>M알라야GTX<br>다운자켓#2</figcaption>
+            </figure>
+
+            <figure>
+              <img src="./img/index-keywords-rank1-pic-2.jpg">
+              <figcaption>M히마GTX<br>히팅다운자켓#2</figcaption>
+            </figure>
+
+            <figure>
+              <img src="./img/index-keywords-rank1-pic-3.jpg">
+              <figcaption>M콜드제로<br>벨티드다운자켓#2</figcaption>
+            </figure>
+          </div>
+
+          <div>더보기</div>
+        </li>
+
+        <li>
+          <div><span>2</span>M콜드제로</div>
+
+          <div class="f-default accordion-box">
+            <figure>
+              <img src="./img/index-keywords-rank2-pic-1.jpg">
+              <figcaption>M콜드제로<br>레이디다운자켓#2</figcaption>
+            </figure>
+
+            <figure>
+              <img src="./img/index-keywords-rank2-pic-2.jpg">
+              <figcaption>M콜드제로<br>봄버다운자켓</figcaption>
+            </figure>
+
+            <figure>
+              <img src="./img/index-keywords-rank2-pic-3.jpg">
+              <figcaption>M콜드제로<br>라이트다운자켓</figcaption>
+            </figure>
+          </div>
+
+          <div>더보기</div>
+        </li>
+
+        <li>
+          <div><span>3</span>343 시리즈</div>
+
+          <div class="f-default accordion-box">
+            <figure>
+              <img src="./img/index-keywords-rank3-pic-1.jpg">
+              <figcaption>343 OG 트렉 GTX</figcaption>
+            </figure>
+
+            <figure>
+              <img src="./img/index-keywords-rank3-pic-2.jpg">
+              <figcaption>343 아크 GTX</figcaption>
+            </figure>
+
+            <figure>
+              <img src="./img/index-keywords-rank3-pic-3.jpg">
+              <figcaption>343 아크 GTX</figcaption>
+            </figure>
+          </div>
+
+          <div>더보기</div>
+        </li>
+
+        <li>
+          <div><span>4</span>마카롱</div>
+
+          <div class="f-default accordion-box">
+            <figure>
+              <img src="./img/index-keywords-rank4-pic-1.png">
+              <figcaption>B마카롱2후드자켓</figcaption>
+            </figure>
+
+            <figure>
+              <img src="./img/index-keywords-rank4-pic-2.jpg">
+              <figcaption>U마카롱후디자켓R</figcaption>
+            </figure>
+
+            <figure>
+              <img src="./img/index-keywords-rank4-pic-3.jpg">
+              <figcaption>U마카롱듀오플리스다운자켓</figcaption>
+            </figure>
+          </div>
+
+          <div>더보기</div>
+        </li>
+
+        <li>
+          <div><span>5</span>요크셔</div>
+
+          <div class="f-default accordion-box">
+            <figure>
+              <img src="./img/index-keywords-rank5-pic-1.jpg">
+              <figcaption>요크셔 그라트 GTX</figcaption>
+            </figure>
+
+            <figure>
+              <img src="./img/index-keywords-rank5-pic-2.jpg">
+              <figcaption>요크셔 더퍼스트 GTX</figcaption>
+            </figure>
+
+            <figure>
+              <img src="./img/index-keywords-rank5-pic-3.png">
+              <figcaption>뉴요크셔 II GTX#1</figcaption>
+            </figure>
+          </div>
+
+          <div>더보기</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="f-default">
+      <div class="keyword-item mr-8 img-box">
+        <img src="./img/index-keywords-keyword-item-1.jpg">
+
+        <div class="item-info f-center-center">
+          <p class="item-name mb-8">M알라야GTX다운자켓#2<br>SILVER BEIGE</p>
+          <p>469,000<span class="percent">24%</span></p>
+        </div>
+
+        <button><img src="./img/icon-like.png"></button>
+      </div>
+
+      <div class="f-d-column mr-8">
+        <div class="keyword-item mb-8 img-box">
+          <img src="./img/index-keywords-keyword-item-2.jpg">
+
+          <div class="item-info f-center-center">
+            <p class="item-name mb-8">M히마GTX히팅다운자켓#1<br>BLACK</p>
+            <p>639,200<span class="percent">20%</span></p>
+          </div>
+
+          <button><img src="./img/icon-like.png"></button>
+        </div>
+
+        <div class="keyword-item txt-box">
+          <div>블랙야크의 Yak On 기술력</div><br>
+          <p>겨울의 추위 속으로 한 걸음 더 들어가세요</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+
+  <script>
+    //키워드 랭킹
+    let accordions = document.querySelectorAll(".accordion-box");
+    let currentIndex = 0;
+
+    setInterval(function () {
+      accordions[currentIndex].style.maxHeight = null;
+      currentIndex = (currentIndex + 1) % accordions.length;
+      accordions[currentIndex].style.visibility = "visible";
+      accordions[currentIndex].style.maxHeight = accordions[currentIndex].scrollHeight + "px";
+    }, 2000);
+  </script>
+
+
+  <div class="events f-default">
+    <div>
+      <p><span>첫 쇼핑에는 블랙야크가 쏠게요!</span><br>가입 시 즉시 사용 가능 2만 포인트 혜택</p>
+    </div>
+    <div>
+      <p><span>상시 5% 할인가로 만나요!</span><br>정상상품 상시 5% 할인 전상품 3% 적립</p>
+    </div>
+  </div>
+
+
+  <article class="now-trend">
+    <h2>Now Trending</h2>
+
+    <ul class="f-center-center">
+      <li class="tabMenu tabmenu-color" onclick="openTab(event,'ISPO')">#ISPO 뮌헨 2023</li>
+      <li class="tabMenu" onclick="openTab(event,'yoksher')">#요크셔 The First GTX</li>
+      <li class="tabMenu" onclick="openTab(event,'winterdown')">#Winter Down</li>
+    </ul>
+
+    <!-- ISPO -->
+    <div class="f-sb-d tabContent" id="ISPO">
+      <div>
+        <div>블랙야크는 2013년부터 누적 29관왕을 차지하며 세계 시장에서 프리미엄 아웃도어로서의 혁신적인 기술력을 입증하였습니다.</div>
+
+        <div class="f-default">
+          <figure>
+            <div class="img-box">
+              <img src="./img/index-trend-ispo-product-1.jpg">
+            </div>
+            <figcaption>
+              <p> 자바리GTX스페셜자켓#2</p>
+              <div>
+                <p>439,000 </p>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <div class="img-box">
+              <img src="./img/index-trend-ispo-product-2.jpg">
+            </div>
+            <figcaption>
+              <p> 툴라기GTX팬츠#2</p>
+              <div>
+                <p>699,000 </p>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <div class="img-box">
+              <img src="./img/index-trend-ispo-product-3.jpg">
+            </div>
+            <figcaption>
+              <p> 바코시G2후드하이브리드자켓#1</p>
+              <div>
+                <p>499,000</p>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="img-box">
+        <img src="./img/index-trend-ispo-banner.jpg">
+
+        <div>
+          <h3>ISPO 뮌헨 2023</h3>
+          <button class="f-center-center">Discover more <img src="./img/icon-index-trend-right-arrow.svg"></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 요크셔 -->
+    <div class="f-sb-d tabContent" id="yoksher" style="display: none;">
+      <div>
+        <div>어떤 길에서도 흔들림 없이 쾌적한 산행을 경험해보세요</div>
+
+        <div class="f-default">
+          <figure>
+            <div class="img-box">
+              <img src="./img/index-trend-yoksher-product-1.jpg">
+            </div>
+            <figcaption>
+              <p> 요크셔 더퍼스트 GTX</p>
+              <div class="f-default">
+                <p class="discount-price mr-8">199,200 </p>
+                <p class="regular-price mr-8">249,000</p>
+                <p class="percent">20%</p>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <div class="img-box">
+              <img src="./img/index-trend-yoksher-product-2.jpg">
+            </div>
+            <figcaption>
+              <p> 요크셔 더퍼스트 D GTX</p>
+              <div class="f-default">
+                <p class="discount-price mr-8">215,200</p>
+                <p class="regular-price mr-8">269,000</p>
+                <p class="percent">20%</p>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <div class="img-box">
+              <img src="./img/index-trend-yoksher-product-3.jpg">
+            </div>
+            <figcaption>
+              <p>요크셔 그라트 GTX</p>
+              <div class="f-default">
+                <p class="discount-price mr-8">200,800</p>
+                <p class="regular-price mr-8">279,000</p>
+                <p class="percent">28%</p>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="img-box">
+        <img src="./img/index-trend-yoksher-banner.jpg">
+
+        <div>
+          <h3>요크셔 The First GTX</h3>
+          <button class="f-center-center">Discover more <img src="./img/icon-index-trend-right-arrow.svg"></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 윈터 다운 -->
+    <div class="f-sb-d tabContent" id="winterdown" style="display: none;">
+      <div>
+        <div>체온 유지를 위한 블랙야크 레이어링</div>
+
+        <div class="f-default">
+          <figure>
+            <div class="img-box">
+              <img src="./img/index-trend-winter-product-1.jpg">
+            </div>
+            <figcaption>
+              <p>M카마나다운자켓#1</p>
+              <div class="f-default">
+                <p class="discount-price mr-8">314,300 </p>
+                <p class="regular-price mr-8">499,000</p>
+                <p class="percent">37%</p>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <div class="img-box">
+              <img src="./img/index-trend-winter-product-2.jpg">
+            </div>
+            <figcaption>
+              <p> D컴프레션맥스다운자켓#1</p>
+              <div class="f-default">
+                <p class="discount-price mr-8">639,200 </p>
+                <p class="regular-price mr-8">799,000</p>
+                <p class="percent">20%</p>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <div class="img-box">
+              <img src="./img/index-trend-winter-product-3.jpg">
+            </div>
+            <figcaption>
+              <p> D컴프레션다운자켓#1</p>
+              <div class="f-default">
+                <p class="discount-price mr-8">479,200 </p>
+                <p class="regular-price mr-8">599,000</p>
+                <p class="percent">20%</p>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="img-box">
+        <img src="./img/index-trend-winter-banner.jpg">
+
+        <div>
+          <h3>Winter Layering</h3>
+          <button class="f-center-center">Discover more <img src="./img/icon-index-trend-right-arrow.svg"></button>
+        </div>
+      </div>
+    </div>
+  </article>
+
+
+  <article class="blackyak-film">
+    <h2>Black Yak Film</h2>
+
+    <div>
+      <img src="./img/index-film-bg.jpg">
+    </div>
+
+    <div class="filmSlideBox">
+      <div class="f-default" id="filmSlide1">
+        <div class="filmSlide">
+          <img src="./img/index-film-slide-1.jpg" id="filmthumnail1">
+          <div id="bg-video1"></div>
+          <div class="play-btn" id="pause-button"></div>
+        </div>
+
+        <div class="filmSlide">
+          <img src="./img/index-film-slide-2.jpg" id="filmthumnail2">
+          <div id="bg-video2"></div>
+          <div class="play-btn"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="film-slide-prev-btn"></div>
+    <div class="film-slide-next-btn"></div>
+  </article>
+
+
+  <article class="winter-hiking f-default">
+    <div>
+      <h2>Winter Hiking</h2>
+
+      <div class="f-d-center">
+        <div class="f-default">
+          <button class="winter-slide-prev-btn"></button>
+          <button class="winter-slide-next-btn"></button>
+        </div>
+
+        <div class="f-default">
+          <button class="slide-auto-play" style="display: none"></button>
+          <button class="slide-auto-stop"></button>
+        </div>
+      </div>
+
+      <div class="img-box">
+        <img src="./img/index-hiking-pic-1.jpg">
+      </div>
+    </div>
+
+    <div class="slickslide1 f-default">
+      <div class="img-box">
+        <img src="./img/index-hiking-slide-1.jpg">
+      </div>
+      <div class="img-box">
+        <img src="./img/index-hiking-slide-2.jpg">
+      </div>
+      <div class="img-box">
+        <img src="./img/index-hiking-slide-3.jpg">
+      </div>
+    </div>
+
+    <div class="slickslide2 f-default">
+      <div class="img-box">
+        <img src="./img/index-hiking-slide-2.jpg">
+      </div>
+      <div class="img-box">
+        <img src="./img/index-hiking-slide-3.jpg">
+      </div>
+      <div class="img-box">
+        <img src="./img/index-hiking-slide-1.jpg">
+      </div>
+    </div>
+  </article>
+
+
+  <script>
+    // index - Winter Hiking 아티클
+    $(document).ready(function () {
+      $('.slickslide1').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow: '.winter-slide-prev-btn',
+        nextArrow: '.winter-slide-next-btn',
+      });
+
+      $('.slickslide2').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        asNavFor: '.slickslide1',
+        prevArrow: '.winter-slide-prev-btn',
+        nextArrow: '.winter-slide-next-btn',
+      });
+
+      $('.slide-auto-play').on('click', function () {
+        $('.slickslide1').slick('slickPlay');
+        $('.slickslide2').slick('slickPlay');
+        $('.slide-auto-play').hide();
+        $('.slide-auto-stop').show();
+      });
+
+      $('.slide-auto-stop').on('click', function () {
+        $('.slickslide1').slick('slickPause');
+        $('.slickslide2').slick('slickPause');
+        $('.slide-auto-stop').hide();
+        $('.slide-auto-play').show();
+      });
+    });
+  </script>
+
+
+  <article class="best-item">
+    <div class="space-betweens">
+      <h2>Weekly Best Item</h2>
+      <p>View more +</p>
+    </div>
+
+    <div class="f-sb-d">
+      <div class="big-thumbnail">
+        <img src="./img/index-best-item-rank-5.jpg">
+
+        <div class="best-num f-center-center f-d-column">
+          <span>Best</span>
+          <span class="big-thumbnail-num">5</span>
+        </div>
+
+        <button>
+          <img src="./img/icon-like.png">
+        </button>
+
+        <div class="big-thumbnail-info">
+          <p class="item-name mb-8">M코트니스탠다운자켓#1 BLACK</p>
+          <div class="f-d-center">
+            <p class="percent mr-8">71%</p>
+            <p class="discount-price mr-8">119,000</p>
+            <p class="regular-price">419,000</p>
+          </div>
+          <p>적립금 3,570P</p>
+        </div>
+      </div>
+
+      <ul class="flex-wraps f-d-column">
+        <li class="f-default thumbnail">
+          <div class="thumbnail-num">1</div>
+
+          <div class="img-box">
+            <img src="./img/index-best-item-rank-1.png">
+          </div>
+
+          <div class="thumbnail-info">
+            <p class="item-name mb-8">B제로스팟미드다운자켓#1
+              BLACK</p>
+            <div class="f-d-center">
+              <p class="percent mr-8">56%</p>
+              <p class="discount-price mr-8">125,100</p>
+              <p class="regular-price">289,000</p>
+            </div>
+            <p>적립금 3,750P</p>
+          </div>
+        </li>
+
+        <li class="f-default thumbnail">
+          <div class="thumbnail-num">2</div>
+
+          <div class="img-box ">
+            <img src="./img/index-best-item-rank-2.jpg">
+          </div>
+
+          <div class="thumbnail-info">
+            <p class="item-name mb-8">M제로스팟알파다운자켓#1
+              D/NAVY</p>
+            <div class="f-d-center">
+              <p class="percent mr-8">28%</p>
+              <p class="discount-price mr-8">157,600</p>
+              <p class="regular-price">219,000</p>
+            </div>
+            <p>적립금 4,720P</p>
+          </div>
+        </li>
+
+        <li class="f-default  thumbnail">
+          <div class="thumbnail-num">3</div>
+
+          <div class="img-box">
+            <img src="./img/index-best-item-rank-3.jpg">
+          </div>
+
+          <div class="thumbnail-info">
+            <p class="item-name mb-8">B맥스벤치알파다운자켓
+              BLACK</p>
+            <div class="f-d-center">
+              <p class="percent mr-8">33%</p>
+              <p class="discount-price mr-8">206,100</p>
+              <p class="regular-price">309,000</p>
+            </div>
+            <p>적립금 6,180P</p>
+          </div>
+        </li>
+
+        <li class="f-default thumbnail">
+          <div class="thumbnail-num">4</div>
+
+          <div class="img-box">
+            <img src="./img/index-best-item-rank-4.jpg">
+          </div>
+
+          <div class="thumbnail-info">
+            <p class="item-name mb-8">폴라아노락티셔츠#1
+              NAVY</p>
+            <div class="f-d-center">
+              <p class="percent mr-8">20%</p>
+              <p class="discount-price mr-8">44,000</p>
+              <p class="regular-price">55,000</p>
+            </div>
+            <p>적립금 1,320P</p>
+          </div>
+        </li>
+
+        <li class="f-default thumbnail">
+          <div class="thumbnail-num">5</div>
+
+          <div class="img-box ">
+            <img src="./img/index-best-item-rank-5.jpg">
+          </div>
+
+          <div class="thumbnail-info">
+            <p class="item-name mb-8">M코트니스탠다운자켓#1
+              BLACK</p>
+            <div class="f-d-center">
+              <p class="percent mr-8">71%</p>
+              <p class="discount-price mr-8">119,000 </p>
+              <p class="regular-price">419,000</p>
+            </div>
+            <p>적립금 3,570P</p>
+          </div>
+        </li>
+
+        <li class="f-default thumbnail">
+          <div class="thumbnail-num">6</div>
+
+          <div class="img-box ">
+            <img src="./img/index-best-item-rank-6.jpg">
+          </div>
+
+          <div class="thumbnail-info">
+            <p class="item-name mb-8">M알라야GTX다운자켓#2
+              BLACK</p>
+            <div class="f-d-center">
+              <p class="percent mr-8">24%</p>
+              <p class="discount-price mr-8">469,000</p>
+              <p class="regular-price">619,000</p>
+            </div>
+            <p>적립금 14,070P</p>
+          </div>
+        </li>
+
+        <li class="f-default thumbnail">
+          <div class="thumbnail-num">7</div>
+
+          <div class="img-box">
+            <img src="./img/index-best-item-rank-7.jpg">
+          </div>
+
+          <div class="thumbnail-info">
+            <p class="item-name mb-8">M알라야GTX다운자켓#2
+              SILVER BEIGE</p>
+            <div class="f-d-center">
+              <p class="percent mr-8">24%</p>
+              <p class="discount-price mr-8">469,000</p>
+              <p class="regular-price">619,000</p>
+            </div>
+            <p>적립금 14,070P</p>
+          </div>
+        </li>
+
+        <li class="f-default thumbnail">
+          <div class="thumbnail-num">8</div>
+
+          <div class="img-box ">
+            <img src="./img/index-best-item-rank-8.jpg">
+          </div>
+
+          <div class="thumbnail-info">
+            <p class="item-name mb-8">M히마GTX히팅다운자켓#1
+              BLACK</p>
+            <div class="f-d-center">
+              <p class="percent mr-8">25%</p>
+              <p class="discount-price mr-8">599,000</p>
+              <p class="regular-price">799,000</p>
+            </div>
+            <p>적립금 17,970P</p>
+          </div>
+        </li>
+
+        <li class="f-default thumbnail">
+          <div class="thumbnail-num">9</div>
+
+          <div class="img-box">
+            <img src="./img/index-best-item-rank-9.png">
+          </div>
+
+          <div class="thumbnail-info">
+            <p class="item-name mb-8">343 OG 트렉 GTX
+              BEIGE</p>
+            <div class="f-d-center">
+              <p class="percent mr-8">25%</p>
+              <p class="discount-price mr-8">179,100</p>
+              <p class="regular-price">239,000</p>
+            </div>
+            <p>적립금 5,370P</p>
+          </div>
+        </li>
+
+        <li class="f-default thumbnail">
+          <div class="thumbnail-num">10</div>
+
+          <div class="img-box ">
+            <img src="./img/index-best-item-rank-10.jpg">
+          </div>
+
+          <div class="thumbnail-info">
+            <p class="item-name mb-8">
+              M콜드제로레이디다운자켓#2
+              GRAYISH BEIGE</p>
+            <div class="f-d-center">
+              <p class="percent mr-8">60%</p>
+              <p class="discount-price mr-8">300,600</p>
+              <p class="regular-price">759,000</p>
+            </div>
+            <p>적립금 9,010P</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </article>
+
+
+  <script>
+    const bigThumbnailImage = document.querySelector('.big-thumbnail> img');
+    const bigThumbnailNum = document.querySelector('.big-thumbnail-num');
+    const bigThumbnailInfo = document.querySelector('.big-thumbnail-info');
+
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const thumbnailNums = document.querySelectorAll('.thumbnail-num');
+    const thumbnailImages = document.querySelectorAll('.thumbnail div img');
+    const thumbnailInfos = document.querySelectorAll('.thumbnail-info');
+
+    //이미지, 텍스트 넘겨주기    
+    thumbnails.forEach((thumbnail, index) => {
+      thumbnail.addEventListener('mouseover', () => {
+        const imageSrc = thumbnailImages[index].getAttribute('src');
+        bigThumbnailImage.setAttribute('src', imageSrc);
+
+        bigThumbnailNum.innerText = thumbnailNums[index].textContent;
+        bigThumbnailInfo.children[0].innerText = thumbnailInfos[index].children[0].textContent;
+        bigThumbnailInfo.querySelector('.percent').innerText = thumbnailInfos[index].querySelector('.percent').textContent;
+        bigThumbnailInfo.querySelector('.discount-price').innerText = thumbnailInfos[index].querySelector('.discount-price').textContent;
+        bigThumbnailInfo.querySelector('.regular-price').innerText = thumbnailInfos[index].querySelector('.regular-price').textContent;
+        bigThumbnailInfo.children[2].innerText = thumbnailInfos[index].children[2].textContent;
+      });
+    });
+  </script>
+
+
+  <article class="dns">
+    <div class="img-box">
+      <img src="./img/index-dns-pic.jpg">
+    </div>
+
+    <div class="f-d-center">
+      <div class="img-box">
+        <img src="./img/index-dns-pic.jpg">
+      </div>
+
+      <div>
+        <div>Make<br><span>&nbsp;&nbsp;&nbsp;Any Place</span><br>Your Place</div>
+        <p>최적의 장소에서 최적의 사람들이 만든<br>뛰어난 아웃도어 제품, 개발은 멈추지 않습니다</p>
+      </div>
+    </div>
+  </article>
+
+
+  <article class="our-story">
+    <h2>Our Story</h2>
+
+    <div class="f-sb-d">
+      <section>
+        <div>
+          <h3>GreenYak</h3>
+          <p>자연을 사랑하는 우리 모두가 함께 완성하는 친환경 문화,<br> '그린야크 캠페인'을 시작합니다.</p>
+        </div>
+        <div class="img-box">
+          <img src="./img/index-story-banner-1.jpg">
+        </div>
+        <div>View More</div>
+      </section>
+
+      <section>
+        <div>
+          <h3>BAC</h3>
+          <p>도전의 가치를 알며 자연과 함께하는 사람들의 커뮤니티</p>
+        </div>
+        <div class="img-box">
+          <img src="./img/index-story-banner-2.jpg">
+        </div>
+        <div>View More</div>
+      </section>
+
+      <section>
+        <div>
+          <h3>Store</h3>
+          <p>가까운 블랙야크 매장을 찾아보세요</p>
+        </div>
+        <div class="img-box">
+          <img src="./img/index-story-banner-3.jpg">
+        </div>
+        <div>View More</div>
+      </section>
+    </div>
+  </article>
+
+
+  <div w3-include-footer="footer.html"></div>
+
+
+  <script>
+    includeHEADER();
+    includeFOOTER();
+  </script>
+
+
+</body>
+
+</html>

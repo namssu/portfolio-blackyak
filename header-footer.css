@@ -1,0 +1,435 @@
+/*햄버거 메뉴*/
+#openIcon {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  width: 24px;
+  height: 40px;
+  cursor: pointer;
+}
+
+#openIcon span {
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 24px;
+  background: #000;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#openIcon :first-child {
+  top: 10px;
+}
+
+#openIcon :nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#openIcon :last-child {
+  bottom: 10px;
+}
+
+.change :first-child {
+  transform: translate(0px, 9px)rotate(-45deg);
+}
+
+.change :nth-child(2) {
+  opacity: 0;
+}
+
+.change :last-child {
+  transform: translate(0, -9px) rotate(45deg);
+}
+
+
+
+header {
+  position: relative;
+  height: 60px;
+  padding: 0 8%;
+  background: #fff;
+  z-index: 50;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  border-bottom: 1px solid #eee;
+}
+
+header> :first-child> :nth-child(2) {
+  width: 130px;
+  margin: 0 40px 0 24px;
+  cursor: pointer;
+}
+
+header> :first-child> :nth-child(2) img {
+  width: 100%;
+  display: block;
+  margin: auto 0;
+}
+
+header> :nth-child(2)> :first-child {
+  position: relative;
+  font-weight: 700;
+  width: auto;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-family: 'Pretendard', sans-serif;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+header> :nth-child(2)> :first-child::after {
+  position: absolute;
+  top: 50%;
+  right: -8px;
+  transform: translateY(-50%);
+  content: "";
+  width: 1px;
+  height: 15px;
+  background: #000;
+}
+
+header> :nth-child(2)> :last-child {
+  margin-left: 16px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+header> :last-child {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  width: 100%;
+  padding: 0 8%;
+  border-top: 1px solid #eee;
+  background: #fff;
+  z-index: 1;
+  max-height: 0;
+  transition: max-height 0.2s ease-in-out;
+}
+
+header> :last-child>ul {
+  margin: 40px 0;
+}
+
+header> :last-child>ul>li {
+  min-width: 128px;
+  margin-left: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+header> :last-child>ul> :first-child {
+  margin-left: 0;
+}
+
+header :last-child ul li ul {
+  padding-left: 16px;
+  margin-top: 16px;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+header :last-child ul li ul li{
+  padding-bottom: 8px;
+}
+
+header> :last-child> :last-child {
+  width: 300px;
+  padding-left: 40px;
+  margin: 40px 0 40px;
+  border-left: 1px solid #eee;
+  flex-shrink: 0;
+  height: 390px;
+}
+
+header> :last-child> :last-child>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.search-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 55;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .3s ease-in-out;
+}
+
+.search-modal>button {
+  position: absolute;
+  top: 40px;
+  right: 4%;
+  width: 40px;
+  height: 40px;
+  background: url('https://www.hfashionmall.com/hfm_pc/resources/images/btn_search_close.png') no-repeat center;
+}
+
+.search-modal>div {
+  width: 980px;
+  display: block;
+  margin: 80px auto;
+}
+
+.search-modal>div> :first-child {
+  height: 56px;
+  border-bottom: 1px solid #000;
+  padding: 10px 16px;
+}
+
+.search-modal>div> :first-child input {
+  border: none;
+  width: 900px;
+  font-size: 1.2rem;
+}
+
+.search-modal>div> :first-child img {
+  width: 32px;
+  height: 32px;
+}
+
+.search-modal>div> :last-child {
+  padding-top: 40px;
+}
+
+.search-modal>div> :last-child> :first-child {
+  width: 270px;
+  border-right: 1px solid #eee;
+}
+
+.search-modal>div> :last-child div> :first-child {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.search-modal>div> :last-child> :last-child {
+  width: 630px;
+}
+
+.search-modal>div> :last-child> :last-child p {
+  font-weight: 0.9rem;
+  color: #666;
+}
+
+.search-modal>div> :last-child> :last-child> :last-child {
+  width: 100%;
+  height: 90px;
+  margin-top: 20px;
+  background: url('https://cdn.byn.kr/real/_data/banner/67e6b1610faa5e693544876cc1b3006c.jpg') no-repeat 25% center/cover;
+}
+
+
+
+.shadow-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 30;
+}
+
+
+
+footer {
+  position: relative;
+  background: #000;
+  color: #666;
+}
+
+footer .fixed-btns {
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+  z-index: 49;
+  background: #000;
+  border-radius: 20px 0 0 0;
+
+  &.footeron {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+footer .fixed-btns button {
+  width: 60px;
+  height: 60px;
+  background: url('https://www.hfashionmall.com/hfm_pc/resources/images/icon_stickey.png') no-repeat;
+  cursor: auto;
+}
+
+footer .fixed-btns :nth-child(2) {
+  background-position: -60px 0;
+}
+
+footer .fixed-btns :last-child {
+  background-position: 100% 0;
+  vertical-align: middle;
+  color: #fff;
+  padding-top: 24px;
+  cursor: pointer;
+}
+
+footer> :not(:first-child) {
+  padding-right: 8%;
+  padding-left: 8%;
+}
+
+footer> :nth-child(2) {
+  padding-top: 100px;
+}
+
+footer> :last-child {
+  padding-bottom: 100px;
+}
+
+footer> :nth-child(2)> :first-child {
+  width: 160px;
+  height: 42px;
+  cursor: pointer;
+}
+
+footer> :nth-child(2)> :first-child img {
+  width: 100%;
+}
+
+footer> :nth-child(2)> :last-child {
+  position: relative;
+}
+
+footer :nth-child(2) :last-child button {
+  position: relative;
+  width: 165px;
+  height: 30px;
+  text-align: left;
+  color: #fff;
+  padding-left: 0;
+}
+
+footer :nth-child(2) :last-child button::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: url('https://www.hfashionmall.com/hfm_pc/resources/images/icon_familysite_arrow.png') no-repeat center;
+  transform: rotate(180deg);
+  transition: .3s;
+}
+
+footer :nth-child(2) :last-child .active::after {
+  transform: rotate(0deg);
+}
+
+footer> :nth-child(2) :last-child ul {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  right: 0;
+  background: #fafafa;
+  width: 165px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+  z-index: 3;
+}
+
+footer> :nth-child(2) :last-child ul li {
+  padding: 0 15px;
+}
+
+footer> :nth-child(2) :last-child ul li:hover {
+  background: #eee;
+}
+
+footer> :nth-child(2) :last-child ul :first-child {
+  margin-top: 15px;
+}
+
+footer> :nth-child(2) :last-child ul :last-child {
+  margin-bottom: 15px;
+}
+
+footer> :nth-child(3) {
+  margin: 40px 0 15px;
+}
+
+footer> :nth-child(3)>p {
+  line-height: 1.7rem;
+}
+
+footer>:nth-child(3) :last-child div {
+  width: 165px;
+}
+
+footer>:nth-child(3) :last-child div p {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+footer>:nth-child(3) :last-child div ul li {
+  line-height: 1.7rem;
+}
+
+footer> :last-child> :first-child {
+  flex-direction: column;
+}
+
+footer :last-child :first-child div p {
+  margin-right: 20px;
+}
+
+footer> :last-child> :first-child> :last-child {
+  font-size: 0.8rem;
+}
+
+footer> :last-child ul {
+  width: 165px;
+}
+
+footer> :last-child ul li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 8px;
+  line-height: 24px;
+}
+
+footer> :last-child ul li::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url('	https://www.hfashionmall.com/hfm_pc/resources/images/icon_footer_sns.png') no-repeat;
+}
+
+footer> :last-child ul :nth-child(2)::before {
+  background-position: -24px 0;
+}
+
+footer> :last-child ul :nth-child(3)::before {
+  background-position: -48px 0;
+}
