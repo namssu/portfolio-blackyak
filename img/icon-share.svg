@@ -1,0 +1,7 @@
+<svg width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.43262 11.5603L12.2951 15.3059" stroke="black"/>
+<circle cx="14.1503" cy="16.4398" r="2.54366" transform="rotate(-57.4249 14.1503 16.4398)" stroke="black"/>
+<path d="M6.43262 9.10181L12.2951 5.35617" stroke="black"/>
+<circle r="2.54366" transform="matrix(0.538404 0.842687 0.842687 -0.538404 14.1503 4.22227)" stroke="black"/>
+<circle r="2.54366" transform="matrix(0.538404 0.842687 0.842687 -0.538404 4.20357 10.2745)" stroke="black"/>
+</svg>
